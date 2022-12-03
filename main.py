@@ -1,2 +1,7 @@
+#!/usr/bin/env python3
+
 import covidnews
-print(covidnews.get_news("2022/08/01", "2022/12/01"))
+import csv
+import pandas as pd
+
+news_data = pd.read_csv("covid_news.csv")
