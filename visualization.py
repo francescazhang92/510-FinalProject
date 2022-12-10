@@ -27,6 +27,13 @@ tweets_data["text_subjectivity"].plot.hist(ax=ax1_2)
 ax1_1.set_xlabel("polarity")
 ax1_2.set_xlabel("subjectivity")
 
+fig4, (ax4_1, ax4_2) = plt.subplots(1, 2, sharey=True)
+fig4.suptitle("Polarity and subjectivity of news summary regarding COVID")
+news_data["summary_polarity"].plot.hist(ax=ax4_1)
+news_data["summary_subjectivity"].plot.hist(ax=ax4_2)
+ax4_1.set_xlabel("polarity")
+ax4_2.set_xlabel("subjectivity")
+
 fig2, ax2 = plt.subplots()
 fig2.suptitle("Scatter plot of recent twitter text polarity to text subjectivity under COVID tag")
 ax2.scatter(tweets_data["text_polarity"], tweets_data["text_subjectivity"])

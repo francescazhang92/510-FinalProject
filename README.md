@@ -1,4 +1,11 @@
  # 510-FinalProject
+ 
+## How to run this project:
+Download all the files in a folder. Recommended to download the csv files as well, because they, especially covid_news_recent, requires a lot of time to retrieve from the api. 
+
+Dependencies are listed in the requirements.txt. To use it, type pip install -r requirements.txt in the command line in the same directory.
+
+Before running the visualization code, make sure covid_news_recent.csv and covid_tweets.csv are in the same directory. Then, simply run "python3 ./visualization.py" to generate the visualizations. 
 ### visualization.py 
 routine that can generate the visualization to the data
 ### covidnews.py 
