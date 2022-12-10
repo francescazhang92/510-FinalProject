@@ -23,6 +23,7 @@ def get_news(from_date, to_date, language = "en", country = "US") -> float:
 
     fstres = requests.get(url, headers=headers, params=querystring)
     total_pages = fstres.json()["total_pages"]
+
     print(f"total {total_pages} pages, retrieving all the data...")
     news = []
     last_retrieved_page = 1
@@ -48,9 +49,9 @@ def get_news(from_date, to_date, language = "en", country = "US") -> float:
 
 
 if __name__ == "__main__":
-    news_data = get_news(sys.argv[1], sys.argv[2])
-    with open('covid_news.csv', 'w') as out:
+    news_data = get_news(sys.argv[2], sys.argv[3])
+    with open(sys.argv[1], 'w') as out:
         fw = csv.writer(out)
-        fw.writerow(['name', 'num'])
+        fw.writerow(['title','summary','published_date'])
         for row in news_data:
             fw.writerow(row)
