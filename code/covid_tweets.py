@@ -41,7 +41,7 @@ def get_tweets_by_tag(tagname, count):
 
 if __name__ == "__main__":
     tweet_data = get_tweets_by_tag("COVID19", int(sys.argv[1]))
-    with open('covid_tweets.csv', 'w') as out:
+    with open('../data/covid_tweets.csv', 'w') as out:
         fw = csv.writer(out)
         fw.writerow(['id', 'text', 'created_at'])
         for row in tweet_data:
