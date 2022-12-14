@@ -5,20 +5,26 @@
 This project is an analysis of how COVID-19 severity impacts
 the public's sentiment and subjectivity. Based on the twitter 
 data regarding COVID-19 and the COVID-19 statistics (death 
-increase, confimed cases).
-## Usage / How to run this project:
-Download all the files in a folder. Due to various kinds 
-of API restrictions, it is difficult to reproduce the data
-collection process, so please download the csv files as well. 
+increase, confimed cases), I attempted to find the correlation 
+between the sentiment and virus severity. 
 
-Dependencies are listed in the requirements.txt. To use 
-it, type pip install -r requirements.txt in the command 
-line in the same directory.
+## Usage / How to run this project:
+Download all the files in code and data folder. 
+
+**IMPORTANT**: Due to various kinds 
+of API constrints, it is difficult to reproduce the data
+collection process for the news data and the twitter data,
+so please download the two csv files in the data folder as well. 
+
+Package dependencies are listed in the requirements.txt. To install them
+, type pip install -r requirements.txt in the command 
+line in the main directory.
 
 Before running the visualization code, make sure covid_news_recent
-.csv and covid_tweets.csv are in the same directory. Then, 
-simply run "python3 ./visualization_and_analysis.py" to generate
-the visualizations and cross-correlation analysis. 
+.csv and covid_tweets.csv are downloaded correctly under data directory. 
+Then, in the main directory of the project, in the command line, type "cd code" to change 
+current working directory to 510-FinalProject/code. Then, simply type "python3 ./visualization_and_analysis.py" to generate
+the visualizations and analysis. 
 
 ## Data collection
 ### covid_tweets.csv 
