@@ -58,6 +58,7 @@ In each textual data, its polarity (from 1, positive, to -1, negative sentiment)
 ### Explanatory analysis and data visualization
 ![fig1](result/Figure_1.png)
 ![fig2](result/Figure_2.png)
+
 Fig1, Fig2: Histogram of the polarity and subjectivity of 
 the tweet dataset and the news dataset, respectively.
 
@@ -67,6 +68,7 @@ This is expected, since the tweets can contain more
 personal opinions than newspapers. 
 
 ![fig3](result/Figure_3.png)
+
 Fig3: Histogram of the polarity and subjectivity of 
 the tweet dataset and the news dataset, respectively.
 
@@ -77,6 +79,7 @@ corresponding polarity also increases.
 
 
 ![fig4](result/Figure_4.png)
+
 Fig4: Time series plot of the last week’s death/confirmed number 
 and tweet sentiments
 
@@ -85,6 +88,7 @@ of the two. Need more systematic analysis to confirm.
 
 ## Correlation and Cross-correlation analysis
 ![fig5](result/Figure_5.png)
+
 Fig5: Correlational analysis of death case and polarity as a example
 
 **Findings**: As can be seen directly, 
