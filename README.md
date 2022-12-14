@@ -17,7 +17,7 @@ collection process for the news data and the twitter data,
 so please download the two csv files in the data folder as well. 
 
 Package dependencies are listed in the requirements.txt. To install them
-, type pip install -r requirements.txt in the command 
+, type python3 -m pip install -r requirements.txt in the command 
 line in the main directory.
 
 Before running the visualization code, make sure covid_news_recent
