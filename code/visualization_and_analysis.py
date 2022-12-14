@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import statsmodels.api as sm
-from code import covid_tweets as tw
+import covid_tweets as tw
 import pandas as pd
 from textblob import TextBlob
 from matplotlib import pyplot as plt
