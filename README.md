@@ -1,6 +1,6 @@
  # 510-FinalProject-Francesca Zhang
  # Public Media and COVID-19: An overview on the public sentiment and COVID-19 severity
- 
+Link to github: https://github.com/francescazhang92/510-FinalProject
 ## Description:
 This project is an analysis of how COVID-19 severity impacts
 the public's sentiment and subjectivity. Based on the twitter 
