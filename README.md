@@ -5,14 +5,14 @@ Link to github: https://github.com/francescazhang92/510-FinalProject
 This project is an analysis of how COVID-19 severity impacts
 the public's sentiment and subjectivity. Based on the twitter 
 data regarding COVID-19 and the COVID-19 statistics (death 
-increase, confimed cases), I attempted to find the correlation 
+increase, confirmed cases), I attempted to find the correlation 
 between the sentiment and virus severity. 
 
 ## Usage / How to run this project:
 Download all the files in code and data folder. 
 
 **IMPORTANT**: Due to various kinds 
-of API constrints, it is difficult to reproduce the data
+of API constraints, it is difficult to reproduce the data
 collection process for the news data and the twitter data,
 so please download the two csv files in the data folder as well. 
 
@@ -35,7 +35,7 @@ essential plan of twitter's endpoint: api.twitter.com/2/tweets/search/recent
 
 With each individual tweet searched and obtained, after unpacking its json form, 
 its id, creation_time and text are preserved, and further 
-data cleaning (removing redundent white spaces, links, etc.) is then performed. 
+data cleaning (removing redundant white spaces, links, etc.) is then performed. 
 
 Due to twitter's restriction on the access, it is not possible to 
 reproduce the collection of this data, since only one recent week 
