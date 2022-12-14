@@ -21,9 +21,9 @@ Package dependencies are listed in the requirements.txt. To install them
 line in the main directory.
 
 Before running the visualization code, make sure covid_news_recent
-.csv and covid_tweets.csv are downloaded correctly under data directory. 
-Then, in the main directory of the project, in the command line, type "cd code" to change 
-current working directory to 510-FinalProject/code. Then, simply type "python3 ./visualization_and_analysis.py" to generate
+.csv and covid_tweets.csv are downloaded correctly under 510-FinalProject/data directory. 
+Then, in the 510-FinalProject directory, in the command line, type "cd code" to change 
+current the working directory to 510-FinalProject/code. Then, simply type "python3 ./visualization_and_analysis.py" to generate
 the visualizations and analysis. 
 
 ## Data collection
@@ -32,6 +32,10 @@ This is the data of 2000 recent tweets collected by covid_tweets.py
 from the official twitter API. The twitters filtered by "COVID19" 
 tag and "verified users" from last week are retrieved through the 
 essential plan of twitter's endpoint: api.twitter.com/2/tweets/search/recent
+
+With each individual tweet searched and obtained, after unpacking its json form, 
+its id, creation_time and text are preserved, and further 
+data cleaning (removing redundent white spaces, links, etc.) is then performed. 
 
 Due to twitter's restriction on the access, it is not possible to 
 reproduce the collection of this data, since only one recent week 
@@ -45,6 +49,9 @@ This is the data of 10000 recent news collected by covidnews.py.
 It contains the news regarding COVID-19 from newscatcher API, 
 through the endpoint "https://covid-19-news.p.rapidapi.com/v1/covid".
 
+With each individual news obtained, after unpacking its json form, 
+its title, summary, and published_date are preserved.
+
 Due to the API's bandwidth restriction, only a limited amount of 
 data can be retrieved every minute. Thus, this data collection 
 process for 10000 entries could take about thirty minutes or more. 
@@ -53,7 +60,7 @@ process for 10000 entries could take about thirty minutes or more.
 This is collected directly from "COVID 19" API: "https://covid-
 19-statistics.p.rapidapi.com/reports/total". It contains various
 information about COVID-19, including daily death difference and
-daily confirmed cases difference. 
+daily confirmed cases difference in USA only. 
 
 ## Analysis, visualization, and discussion
 ### Data processing: 
@@ -122,6 +129,8 @@ drawn.
 
 Also, since twitter cannot be representative of the public media, more data can be collected
 from various different kinds of public media platform for further study. 
+
+
 ## Codes and modules usage
 ### visualization_and_analysis.py 
 routine that can process and generate visualization and analysis to the data
@@ -133,6 +142,6 @@ this script requires about 30 minutes to retrieve 10000
 sample. Because of this, a sample file contains 10000 line
 of news is given as covid_news.csv 
 ### covid_tweets.py
-it is a script that can collect the tweets from the recent week into csv file, given an argument on the maximum number of tweets.
+it is a script that can collect the tweets from the recent week and cleaned them into csv file, given an argument on the maximum number of tweets.
 ### covid_stats.py
 a module that collects the statistics of COVID in the recent week
